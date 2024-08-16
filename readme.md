@@ -3,7 +3,7 @@ Simple, single-header, [epoch-based](https://aturon.github.io/blog/2015/08/27/ep
 
 Here's how you could use this in an ECS-type implimentation. 
 
-```
+```c
 #include "rgc.h"
 
 typedef struct { int x, y; } Position;
