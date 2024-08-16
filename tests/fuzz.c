@@ -1,4 +1,4 @@
-#include "rgc.h"
+#include "../rgc.h"
 #include <pthread.h>
 #include <stdatomic.h>
 #include <stdlib.h>
@@ -6,8 +6,8 @@
 #include <unistd.h>
 #include <assert.h>
 
-#define NUM_THREADS 2
-#define NUM_ITERATIONS 1000
+#define NUM_THREADS 4
+#define NUM_ITERATIONS 100000
 
 typedef struct {
     epoch_gc_t *gc;
