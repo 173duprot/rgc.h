@@ -17,6 +17,7 @@ int main() {
     Velocity *v = malloc(sizeof(Velocity)); v->vx = 1; v->vy = 1;
 
     enter_critical(&gc, 0); update(p, v); exit_critical(&gc, 0);
+
     add_garbage(&gc, (node_t*)p); add_garbage(&gc, (node_t*)v); collect_garbage(&gc);
 
     return 0;
